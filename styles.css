@@ -1,0 +1,457 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none; 
+    border: none; 
+    text-decoration: none; 
+    text-transform: capitalize; 
+    transition: all .2s linear; 
+    line-height: 1.5; 
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fcf2e8;
+    padding-left: 30rem;
+}
+
+section{
+    padding: 1 rem 5%;
+    min-height: 100vh;
+}
+
+.heading{
+    color: #ff0073;
+    text-transform: uppercase;
+}
+
+.heading span{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem; 
+    background: #ff0073;
+    color:■#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 30px;;
+}
+
+.btn .hover{
+    background: #111;
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: black;
+}
+
+.heading span{
+    color: #ff0073;
+}
+
+header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    background:#222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    text-align: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    color: #fff; 
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+header .logo span{
+    text-transform: uppercase;
+    color: #ff0073; 
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color: #ff0073; 
+}
+
+header .follow a{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0.7rem;
+}
+
+header .follow a:hover{
+    color: #ff0073;
+}
+
+#menu-bars{
+    position: fixed;
+    top:1rem; 
+    right: 1rem;
+    z-index: 10000;
+    background: #ff0073; 
+    color:#fff;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .image img{
+    width: 60%;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .content .hi{
+    font-size: 2rem; 
+    color:var(--main-color);
+}
+    
+.home .content h3{ 
+    color: #111;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{ 
+    color: #ff0073;
+    text-transform: uppercase;
+}
+
+.home .content .info{
+    font-size: 2.5rem;
+    color: #111;
+    padding: .5rem 0;
+}
+
+.home .content .text{
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+
+/* About Styling */
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:  1rem 0;
+}
+
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row  .info h3 span{
+    color: #ff0073;
+    padding: 0.5rem;
+}
+
+.about .row .box_container{
+    flex:1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-right: 70px;
+}
+
+.about .row .box_container .box{
+    flex: 1 1 15rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about .row .box_container .box h3{
+    color: #ff0073;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about .row .box_container .box p{
+    color: #666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+
+/* Education Styling */
+
+.education .contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    margin-bottom: 180px;
+}
+
+.education .contents .box1{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #ff0073;
+    position: relative;
+}
+
+.education .contents .box1 span{
+    font-size: 1.3rem;
+    background: #3b3b3b;
+    color: white;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .contents .box1 h3{
+    font-size: 2rem;
+    color: #ff0073;
+    padding-top: 1.5rem;
+}
+
+.education .contents .box1 p{
+    font-size: 1.4rem;
+    color: #222;
+    padding-top: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Project Styling */
+.project .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 100px;
+}
+
+.project .box-container .box2{
+    flex: 1 1 30rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid #fff;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.project .box-container .box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.project .box-container .box2:hover img{
+    height: 75%;
+    width: 75%;
+}
+
+.project .box-container .box2 h3{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project .box-container .box2 .icons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.project .box-container .box2 .icons a{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: #333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project .box-container .box2 .icons a:hover{
+    background: #ff0073;
+    color: #fff;
+
+}
+
+
+/* Contact Styling */
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 5rem;
+    padding-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: black;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #ff0073;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact .row .cotent .info h3 i{
+    padding-right: 1rem;
+    color: #ff0073;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Media Queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding: 0;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header{
+        left: -120%;
+    }
+    header.active{
+        left: 0%;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
